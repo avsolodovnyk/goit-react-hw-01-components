@@ -1,0 +1,12 @@
+.transactionHistory {
+  composes: name from '../Profile/Profile.module.css';
+  min-width: 800px;
+  text-align: center;
+  background-color: pink;
+}
+.thead {
+  background-color: rgb(134, 176, 224);
+}
+.rows {
+  background-color: aquamarine;
+}

@@ -1,0 +1,55 @@
+.profile {
+  display: inline-flex;
+  max-width: 100%;
+  width: 400px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(195, 195, 231);
+}
+.description {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  text-align-last: center;
+}
+.avatar {
+  margin-top: 50px;
+  border-radius: 50%;
+}
+.name {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+}
+.tag {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: gray;
+}
+.location {
+  composes: tag;
+}
+.stats {
+  display: inline-flex;
+  text-align: center;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 50, 0.1);
+}
+.ul_item {
+  min-width: 90px;
+}
+.label {
+  composes: tag;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.quantity {
+  composes: label;
+}
