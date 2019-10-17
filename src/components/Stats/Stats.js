@@ -12,7 +12,7 @@ const genColor = () => {
 };
 const Stats = ({ title, stats }) => (
   <section className={styles.statsSection}>
-    <h2 className={styles.title}>{title}</h2>
+    {title ? <h2 className={styles.title}>{title}</h2> : ''}
     <ul className={styles.statList}>
       {stats.map(item => (
         <li
@@ -27,8 +27,11 @@ const Stats = ({ title, stats }) => (
     </ul>
   </section>
 );
+Stats.defaultProps = {
+  title: false,
+};
 Stats.propTypes = {
-  title: T.string.isRequired,
+  title: T.string,
   stats: T.arrayOf(
     T.exact({
       id: T.string.isRequired,
